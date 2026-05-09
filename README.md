@@ -4,7 +4,7 @@ OpenAI TTS API-compatible bridge for AivisSpeech Engine / VOICEVOX.
 
 ```mermaid
 flowchart LR
-    client[Client] -->|//v1/audio/speech| bridge[aivis-openai-tts-bridge] --> aivis[AivisSpeech Engine]
+    client[Client] -->|/v1/audio/speech| bridge[aivis-openai-tts-bridge] --> aivis[AivisSpeech Engine]
 ```
 
 ## Quick Start (Docker)
