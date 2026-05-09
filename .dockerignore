@@ -1,0 +1,9 @@
+# Deny all
+*
+
+# Allow only files needed for Docker build
+!src/
+!pyproject.toml
+!uv.lock
+!README.md
+!.env.example

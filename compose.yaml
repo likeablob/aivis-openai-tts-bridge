@@ -1,0 +1,16 @@
+services:
+  tts-bridge:
+    build: .
+    ports:
+      - "10201:10201"
+    env_file:
+      - .env
+    environment:
+      - SERVER__HOST=0.0.0.0
+      - SERVER__PORT=10201
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
